@@ -1,0 +1,11 @@
+Menu <br />
+<nav id="menu-global">
+    <ul>
+        {{#each menuItems as |item|}}
+            {{!-- <li>{{item}}</li> --}}
+            <li>{{#link-to item.link}}{{item.name}}{{/link-to}}</li>
+        {{/each}}
+    </ul>
+</nav>
+
+{{yield}}
